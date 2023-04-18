@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,200;0,400;1,300&family=Roboto&family=Roboto+Mono&family=Rubik&display=swap');
+@import "variables.scss";
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-1rem); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $tipografia-general, sans-serif;
+}
+
+.errorOops {
+    background-image: url('../assets/img/oops.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .error-404 {
+    padding: 60px 0;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+.fondo{
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.642),rgba(0, 0, 0, 0.642)),  url("../assets/img/fogon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.borroso{
+    backdrop-filter: blur(5px);/*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
+    height:100%;
+}
+.colorNav{
+    background-color: $color-fondo;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+.justificar{
+    display: flex;
+    justify-content: $justify-contenido;
+    align-items: $align-items;  
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content:$justify-content ;
+    align-items: $align-items;
+   
+}
+
+.galeria{
+    width: 100%;
+}
+
+.carousel-item{
+   height: 70vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    
+}
+.piePagina{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:4rem;
+    width:100%;
+}
+.alinear{
+   text-align: $aliniar-texto;
+}
+.icon{
+    display: inline-block;
+    font-size: 2rem;
+    color:$color-icon;
+    animation: float infinite 4s ease-in-out ;
+}
+.ri-facebook-circle-line{
+   animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+}
+
+.ri-whatsapp-line{
+  animation-delay: 1s; /*Adds a animation delay of 2 seconds.*/
+}
+
+/*estilos de pagina de contacto */
+.contenedorMain{
+    position:relative;
+    width: 100%;
+    height: 70vh;
+    display:flex;   
+    justify-content: center;
+    align-items: $align-items;
+    margin-top:2rem;
+  
+}
+
+.contact-box{
+    max-width: 850px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:$justificar-contenido;
+    align-items:center;
+    text-align: center;
+    background-color: $color-fondo;
+    box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
+
+}
+.left{
+    background: url("../assets/img/late.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+.right{
+    padding: 25px 40px;
+}
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color:$color-background;
+
+}
+.field{
+    width: 100%;
+    border: 2px solid $color-background;
+    outline:none;
+    background-color: #9b8a8f;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.field:hover{
+    background-color:$color-background;
+
+}
+textarea{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: $color-background;
+    color: $color-fondo;
+    font-size: 1.1rem;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color:$color-background;
+}
+.field:focus{
+    border: 2px solid #38b3c4 ;
+    background-color:$color-fondo;
+}
+/*pagina nosotros*/
+.contenedorNosotros{
+    display: flex;
+    height:80vh;
+}
+
+.columna { 
+    width: 50%; 
+}
+.col-info {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content:$justificar-contenido;
+    min-height: 100%;
+    background:#3a1d1d;
+    background: linear-gradient(0deg,#3a1d1df6 0%,#442828f6 63%);
+    padding: 1rem 12rem 1rem 4rem;
+}
+
+.col-info p { line-height: 1.5; }
+
+.col-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/proceso1.jpg"); 
+}
+.col-vid{
+    background-position: center;
+    background-size:cover ;
+    
+}
+.col-img2{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/gas\ ok.jpg");
+}
+.col-img3{
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/img/AllGod.jpg");
+}
+
+.titulo {
+    margin: 0 0 1.6rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.titulo span {
+     color: $color-fondo;
+     display: block;
+ }
+
+.parrafoNosotros{
+    color: rgb(213, 201, 201);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.alto{
+    height:70vh;
+}
+
+.columnaIzq{
+    height:100%;
+}
+.columnaDer{
+    height:100%;
+}
+
+.colorGas{
+    color: #b42f2fbe;
+}
+
+.contenedorCliente{
+    position:relative;
+    width: 100%;
+    height: 70vh;
+    display:flex;   
+    justify-content: center;
+    align-items: $align-items;
+    margin-top:2rem;
+}
+
+/*cuando es un celular */
+@media screen and (max-width: 768px){
+    .galeria{
+        width: 100%;
+        height:80vh;
+        display: flex;
+        align-items: center;
+    } 
+    .icon{
+        font-size: 1.5rem;
+    }
+    .piePagina{
+        height: 3rem;
+    }
+    /*nosotros*/
+    .col-info {
+       width:100%;
+       height: 100%;
+       padding:1rem;
+    }
+    .parrafoNosotros{
+        font-size: 1.2rem;
+        line-height: 2.0;
+    }
+    .titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .titulo span{
+       display:inline;
+    }
+    .ocultar{
+        display: none;
+    }
+    /* pagina contacto*/
+    .contenedorMain{
+       padding: 20px;  
+    }
+     
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        background-size: cover;
+        height: 100%;
+    }
+    .right{
+        padding: 25px 20px;
+    }
+}
+
+/*cuando es celular pero horizontal*/
+@media screen and (max-width:1000px) and (orientation: landscape){
+    h1{
+        font-size: 1.2rem;
+    }
+    .galeria{
+        display: flex;
+        justify-content:$justificar-contenido;
+    } 
+    .carousel-item{
+        width:100%;
+        height: 55vh;
+    }
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon{
+        font-size: 1.5rem;
+    }
+    .piePagina{
+        height: 3rem;
+    }
+
+
+   
+
+}
