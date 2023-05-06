@@ -18,7 +18,7 @@
 }
 
 .errorOops {
-  background-image: url("../assets/img/oops.jpg");
+  background-image: url("../assets/img/oops.png");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -139,7 +139,7 @@ body {
 }
 
 .left {
-  background: url("../assets/img/late.jpg") no-repeat center;
+  background: url("") no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -170,7 +170,7 @@ h2::after {
   width: 100%;
   border: 2px solid rgb(207, 50, 50);
   outline: none;
-  background-color: #9b8a8f;
+  background-color: #ffffff;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   margin-bottom: 22px;
@@ -222,7 +222,7 @@ textarea {
   align-items: baseline;
   justify-content: center;
   min-height: 100%;
-  background: #3a1d1d;
+  background: #ffffff;
   background: linear-gradient(0deg, rgba(58, 29, 29, 0.9647058824) 0%, rgba(68, 40, 40, 0.9647058824) 63%);
   padding: 1rem 12rem 1rem 4rem;
 }
@@ -234,7 +234,7 @@ textarea {
 .col-img {
   background-position: center;
   background-size: cover;
-  background-image: url("../assets/img/proceso1.jpg");
+  background-image: url("../assets/img/proceso5.png");
 }
 
 .col-vid {

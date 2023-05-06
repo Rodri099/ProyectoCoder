@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,200;0,400;1,300&family=Roboto&family=Roboto+Mono&family=Rubik&display=swap');
 @import "variables.scss";
+@import "./mixin.scss";
 @keyframes float {
     0%{
         transform: translateY(0); /*The starting point of the animation is 0.*/
@@ -22,7 +23,7 @@
 }
 
 .errorOops {
-    background-image: url('../assets/img/oops.jpg');
+    background-image: url('../assets/img/oops.png');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -222,7 +223,7 @@ textarea{
 .col-img {
     background-position: center;
     background-size: cover;
-    background-image: url("../assets/img/proceso1.jpg"); 
+    background-image: url("../assets/img/inspeccionGas.jpg"); 
 }
 .col-vid{
     background-position: center;

@@ -1,0 +1,130 @@
+$float-animation: float infinite 4s ease-in-out;
+$facebook-delay: 0.5s;
+$whatsapp-delay: 1s;
+$primary-color: rgb(207, 50, 50);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.errorOops {
+  background-image: url("../assets/img/oops.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.error-404 {
+  padding: 60px 0;
+  text-align: center;
+  h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.fondo {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.642), rgba(0, 0, 0, 0.642)), url("../assets/img/fogon.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.borroso {
+  backdrop-filter: blur(5px); /*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
+  height: 100%;
+}
+
+.colorNav {
+  background-color: white;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.justificar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.galeria {
+  width: 100%;
+}
+
+.carousel-item {
+  height: 70vh;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.piePagina {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+}
+
+.alinear {
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  font-size: 2rem;
+  color: rgb(63, 212, 223);
+  animation: $float-animation;
+}
+
+.ri-facebook-circle-line {
+  animation-delay: $facebook-delay;
+}
+
+.ri-whatsapp-line {
+  animation-delay: $whatsapp-delay;
+}
+
+/*estilos de pagina de contacto */
+.contenedorMain {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0 }

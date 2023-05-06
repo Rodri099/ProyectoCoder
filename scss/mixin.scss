@@ -1,0 +1,34 @@
+// Mixin para los estilos generales
+@mixin general-styles {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  // Mixin para el efecto de flotación
+  @mixin float-effect {
+    animation: float infinite 4s ease-in-out;
+    @keyframes float {
+      0% {
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+      }
+      50% {
+        transform: translateY(-1rem); /*The middle point of the animation is -15xp. This will move the element up.*/
+      }
+      100% {
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+      }
+    }
+  }
+  
+  // Mixin para los estilos de la página de contacto
+  @mixin contact-page-styles {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
