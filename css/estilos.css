@@ -304,9 +304,11 @@ textarea {
     height: 80vh;
     display: flex;
     align-items: center;
+    
   }
   .icon {
     font-size: 1.5rem;
+    color: #fff;
   }
   .piePagina {
     height: 3rem;
@@ -344,6 +346,15 @@ textarea {
   }
   .right {
     padding: 25px 20px;
+  }
+  .custom-toggler {
+    background-color: #000; /* Cambia el color de fondo del menú hamburguesa en versión móvil */
+    border-color: #fff; /* Cambia el color del borde del menú hamburguesa en versión móvil */
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    /* Agrega estilos para el icono del menú hamburguesa en versión móvil */
+    background-color: #fff; /* Cambia el color del icono a blanco */
   }
 }
 /*cuando es celular pero horizontal*/
